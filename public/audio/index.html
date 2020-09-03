@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+	<title>Record Audio Test</title>
+  <link rel='icon' type='image/png' href='/img/favicon.ico'>
+  <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/style.css" />
+  <link rel="stylesheet" href="https://wavesurfer-js.org/example/css/ribbon.css" />
+  </head>
+  <body>
+    <h1>Audio Recording Test <span id="timer"></span></h1>
+
+    <div id="demo">
+      <div id="waveform">
+          <!-- Here be the waveform -->
+      </div>
+
+      <div class="controls">
+          <div class="row">
+              <div class="col-sm-7">
+                  <button id="record" onclick="record()">Start recording...</button>
+                  <button id="stop" onclick="stop()" disabled>Stop</button>
+                  <button id="play" class="btn btn-primary" data-action="play" disabled>
+                      <i class="glyphicon glyphicon-play"></i>
+                      Play /
+                      <i class="glyphicon glyphicon-pause"></i>
+                      Pause
+                  </button>
+                  <button id="proceed" onclick="proceed()" disabled>Proceed</button>
+              </div>
+          </div>
+      </div>
+  </div>    
+	<div id="waveform"></div>
+  <canvas id="meter" width="500" height="50"></canvas>
+
+</body>
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<script src="/audio/js/recorder.js"></script>
+<script src="/audio/js/main.js"></script>
+<script src="/audio/js/volume-meter.js"></script>
+<script>
+</script>
+</html>
